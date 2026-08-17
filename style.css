@@ -217,7 +217,7 @@
   }
   .proj-card:hover{transform:translateY(-3px); border-color:rgba(59,158,255,0.35); box-shadow:0 20px 40px -24px rgba(0,0,0,0.5);}
   .proj-banner{height:130px; display:flex; align-items:center; justify-content:center; font-size:42px;}
-  .proj-body{padding:24px 26px 26px;}
+  .proj-body{padding:24px 26px 26px; display:flex; flex-direction:column; flex:1;}
   .proj-tags{display:flex; flex-wrap:wrap; gap:8px; margin-bottom:18px; direction:ltr; justify-content:flex-start;}
   body.lang-ar .proj-tags{justify-content:flex-end;}
   .proj-tag{background:var(--surface-alt); border:1px solid var(--border); border-radius:8px; padding:6px 12px; font-size:12px; font-weight:600; color:var(--text-dim);}
@@ -229,8 +229,15 @@
   .proj-bullets li{display:flex; gap:10px; margin-bottom:10px; color:var(--text-dim); font-size:14px; line-height:1.6;}
   .proj-bullets li::before{content:"➤"; color:var(--accent); flex-shrink:0; font-size:11px; margin-top:4px;}
   body.lang-ar .proj-bullets li::before{content:"◀";}
-  .proj-link{margin-top:14px; font-size:13px; font-weight:600; color:var(--accent); display:flex; align-items:center; gap:6px;}
-  .proj-link:hover{text-decoration:underline;}
+  .proj-link{
+    align-self:stretch; margin-top:auto;
+    display:inline-flex; align-items:center; justify-content:center; gap:7px;
+    font-size:13.5px; font-weight:700; color:var(--accent);
+    padding:11px 16px; border-radius:9px;
+    background:var(--accent-soft); border:1px solid rgba(59,158,255,0.4);
+    transition:background .15s, border-color .15s, transform .15s;
+  }
+  .proj-link:hover{background:rgba(59,158,255,0.22); border-color:var(--accent); transform:translateY(-1px);}
 
   /* EDUCATION & CERTS */
   .edu-grid{display:grid; grid-template-columns:1fr; gap:22px;}
