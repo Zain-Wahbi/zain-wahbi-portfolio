@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zain Wahbi | Backend & ML Engineer</title>
+<meta name="description" content="Zain Wahbi — Computer Engineer specializing in Laravel/PHP REST APIs and Machine Learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233B9EFF'/%3E%3Cstop offset='1' stop-color='%230077B5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='69' font-family='Arial,sans-serif' font-weight='700' font-size='58' fill='%2308131F' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="brand-group">
+      <div class="brand">Zain <span class="brand-accent">Wahbi</span></div>
+    </div>
+    <div class="navlinks">
+      <a href="#about" data-i18n="nav_about">About</a>
+      <a href="#skills" data-i18n="nav_skills">Skills</a>
+      <a href="#projects" data-i18n="nav_projects">Projects</a>
+      <a href="#education" data-i18n="nav_education">Education</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-toggle-btn" id="langToggleBtn" onclick="toggleLang()">AR</button>
+      <a class="cv-btn" id="cvBtn" href="assets/Zain_Wahbi_Resume.pdf" target="_blank" rel="noopener">
+        <span class="cv-label" data-i18n="nav_cv">Resume</span><span class="ext-ic">↗</span>
+      </a>
+      <a class="nav-cta" href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.zainwahbi@gmail.com" target="_blank" rel="noopener" data-i18n="nav_cta">Get in touch</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="hero-badge" data-i18n="hero_badge">Computer Engineering · Hama, Syria</div>
+        <h1 class="hero-name">Zain <span class="accent-text">Wahbi</span></h1>
+        <div class="hero-subtitle" data-i18n="hero_subtitle">Backend & ML Engineer</div>
+        <p class="lede" data-i18n="hero_lede">Computer Engineering graduate specializing in Laravel/PHP REST APIs and applied Machine Learning. I turn messy requirements — and messy data — into systems people can rely on.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects" data-i18n="hero_btn1">View projects</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero_btn2">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="avatar-wrap">
+          <div class="avatar-ring">
+            <div class="avatar" id="avatarBox">
+              <img id="avatarImg" alt="Zain Wahbi">
+              <span id="avatarInitials">ZW</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <h2 class="about-heading" data-i18n="about_heading">About Me</h2>
+      <div class="about-body-full">
+        <p data-i18n="about_p1">I'm a Computer Engineer who graduated from Al-Wataniya Private University in 2026, based in Hama, Syria. My work sits at the intersection of solid backend engineering and applied machine learning — I like systems that are both correct and explainable.</p>
+        <p data-i18n="about_p2">Day to day, that means designing Laravel REST APIs with proper authentication, payments and background jobs, and building ML pipelines that go from raw data to a served prediction endpoint. I care about clean code, SOLID principles, and being upfront about a model's limitations rather than just its headline metric.</p>
+      </div>
+
+      <h3 class="comp-heading" data-i18n="comp_heading">Core Competencies</h3>
+      <div id="skills" class="comp-grid">
+        <div class="comp-card">
+          <h4 data-i18n="comp1_title">Backend & APIs</h4>
+          <p data-i18n="comp1_desc">PHP, Laravel, REST APIs, Sanctum, Stripe, FastAPI, MySQL</p>
+        </div>
+        <div class="comp-card">
+          <h4 data-i18n="comp2_title">Machine Learning & Data</h4>
+          <p data-i18n="comp2_desc">Python, Pandas, Scikit-learn, Random Forest, XGBoost, LightGBM, TabNet</p>
+        </div>
+        <div class="comp-card">
+          <h4 data-i18n="comp3_title">Frontend (basic)</h4>
+          <p data-i18n="comp3_desc">HTML, CSS, JavaScript, Tailwind</p>
+        </div>
+        <div class="comp-card">
+          <h4 data-i18n="comp4_title">Tools & Principles</h4>
+          <p data-i18n="comp4_desc">Git, GitHub, OOP, SOLID Principles, Excel</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <h2 class="section-title-center" data-i18n="projects_title">Projects</h2>
+      <div class="proj-grid">
+        <div class="proj-card">
+          <div class="proj-banner" style="background:linear-gradient(135deg,#312E81,#1E3A8A);">🛡️</div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">Python</span><span class="proj-tag">Random Forest</span><span class="proj-tag">LightGBM</span><span class="proj-tag">XGBoost</span><span class="proj-tag">TabNet</span><span class="proj-tag">FastAPI</span><span class="proj-tag">Laravel</span>
+            </div>
+            <div class="proj-title2" data-i18n="proj1_title">Fraud Bank — Financial Fraud Detection</div>
+            <div class="proj-date2" data-i18n="proj1_date">Graduation Project · Feb – Jul 2026</div>
+            <ul class="proj-bullets">
+              <li data-i18n="proj1_desc">Compared four ML models on 5 million transactions, engineered 30+ features, and shipped the winner behind a full Laravel dashboard with live simulation.</li>
+              <li data-i18n="proj1_li1">Random Forest, XGBoost, LightGBM and TabNet trained on a stratified 4M-record split with 3:1 undersampling</li>
+              <li data-i18n="proj1_li2">LightGBM selected for deployment — best F1-score and fastest inference, threshold tuned to 0.94</li>
+              <li data-i18n="proj1_li3">FastAPI backend (predict, batch-predict, explain, health) with a 9-step preprocessing pipeline</li>
+              <li data-i18n="proj1_li4">Bilingual (AR/EN) Laravel dashboard with live transaction simulation, Chart.js analytics, and rule-based fraud explanations</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-banner" style="background:linear-gradient(135deg,#0F766E,#0E7490);">🛒</div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">Laravel</span><span class="proj-tag">Sanctum</span><span class="proj-tag">Stripe</span><span class="proj-tag">MySQL</span><span class="proj-tag">Swagger</span>
+            </div>
+            <div class="proj-title2">ShopAPI</div>
+            <div class="proj-date2" data-i18n="proj2_date">Jun 2026</div>
+            <ul class="proj-bullets">
+              <li data-i18n="proj2_desc">Full-featured e-commerce REST API — 12 relational tables covering auth, products, cart, coupons, orders and Stripe payments end to end.</li>
+              <li data-i18n="proj2_li1">Sanctum token auth with remember-me sessions, email verification and rate-limited endpoints (10 req/min)</li>
+              <li data-i18n="proj2_li2">Stripe Payment Intent integration with webhook verification and DB-transaction stock locking to prevent race conditions</li>
+              <li data-i18n="proj2_li3">Queued email notifications (welcome, order confirmation, payment receipt) via background jobs</li>
+              <li data-i18n="proj2_li4">Full admin panel for products, categories, orders, coupons and users, plus interactive Swagger/OpenAPI docs</li>
+            </ul>
+            <a class="proj-link" href="https://github.com/Zain-Wahbi/shop-api" target="_blank" rel="noopener"><span data-i18n="view_github">View on GitHub →</span></a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-banner" style="background:linear-gradient(135deg,#4C1D95,#6D28D9);">✅</div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">Laravel</span><span class="proj-tag">Sanctum</span><span class="proj-tag">MySQL</span><span class="proj-tag">PHPUnit</span>
+            </div>
+            <div class="proj-title2" data-i18n="proj3_title">Todo App API</div>
+            <div class="proj-date2" data-i18n="proj3_date">May 2026</div>
+            <ul class="proj-bullets">
+              <li data-i18n="proj3_desc">RESTful task-management API built with Laravel 11 and Sanctum, fully tested and deployed live.</li>
+              <li data-i18n="proj3_li1">Full task & category CRUD with filtering, search and cached dashboard statistics</li>
+              <li data-i18n="proj3_li2">Role-based admin panel for managing users and tasks, with rate limiting and request logging</li>
+              <li data-i18n="proj3_li3">31 automated tests (73 assertions) via PHPUnit</li>
+            </ul>
+            <a class="proj-link" href="https://github.com/Zain-Wahbi/todo-app-api" target="_blank" rel="noopener"><span data-i18n="view_github">View on GitHub →</span></a>
+          </div>
+        </div>
+
+        <div class="proj-card">
+          <div class="proj-banner" style="background:linear-gradient(135deg,#075985,#0369A1);">✈️</div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span class="proj-tag">PHP</span><span class="proj-tag">MySQL</span><span class="proj-tag">jQuery</span><span class="proj-tag">Chart.js</span>
+              <span class="proj-tag proj-tag-progress" data-i18n="proj4_progress">🚧 V2 in progress — Laravel</span>
+            </div>
+            <div class="proj-title2" data-i18n="proj4_title">ATC — Airline Travel Company</div>
+            <div class="proj-date2" data-i18n="proj4_date">Apr – Jun 2025</div>
+            <ul class="proj-bullets">
+              <li data-i18n="proj4_desc">Full-stack airline booking system with three role-based experiences — admin, employee and customer — sharing one codebase.</li>
+              <li data-i18n="proj4_li1">Real-time flight & seat management with auto seat generation and status tracking (upcoming → departed → arrived)</li>
+              <li data-i18n="proj4_li2">Transactional booking flow with live seat locking to prevent double-booking, plus automatic fare calculation</li>
+              <li data-i18n="proj4_li3">Digital tickets with scannable QR codes and a print-ready boarding pass layout</li>
+              <li data-i18n="proj4_li4">Admin panel, a Chart.js statistics dashboard, and a fully RTL Arabic interface</li>
+            </ul>
+            <a class="proj-link" href="https://github.com/Zain-Wahbi/airline-travel-company-v1" target="_blank" rel="noopener"><span data-i18n="view_github">View on GitHub →</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- EDUCATION & CERTS -->
+  <section id="education">
+    <div class="wrap">
+      <h2 class="section-title-center" data-i18n="edu_eyebrow">Education & Certifications</h2>
+      <div class="edu-grid">
+        <div class="info-card">
+          <div class="info-card-head"><span class="info-icon">🎓</span><h3 data-i18n="edu_subhead">Education</h3></div>
+          <div class="edu-degree" data-i18n="fact_degree_val">B.Eng, Computer Engineering</div>
+          <div class="edu-meta"><b data-i18n="fact_uni_val">Al-Wataniya Private University</b> · <span data-i18n="edu_date">Sep 2021 – Jul 2026</span></div>
+          <div class="edu-course" data-i18n="edu_course">Relevant coursework: PHP-based web applications, Java programming, database management systems.</div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-head"><span class="info-icon">📜</span><h3 data-i18n="certs_subhead">Certifications</h3></div>
+          <div class="cert-item"><span class="cert-icon">✓</span><div><div class="cert-name">Mastering Laravel Framework and PHP</div><div class="cert-org">Coursera</div></div></div>
+          <div class="cert-item"><span class="cert-icon">✓</span><div><div class="cert-name">Building Web Applications in PHP</div><div class="cert-org">Coursera — University of Michigan</div></div></div>
+          <div class="cert-item"><span class="cert-icon">✓</span><div><div class="cert-name">JavaScript, jQuery, and JSON</div><div class="cert-org">Coursera — University of Michigan</div></div></div>
+          <div class="cert-item"><span class="cert-icon">✓</span><div><div class="cert-name">Data Analysis with Python</div><div class="cert-org">Coursera — IBM</div></div></div>
+          <div class="cert-item"><span class="cert-icon">✓</span><div><div class="cert-name">Introduction to Data Analytics</div><div class="cert-org">Coursera — IBM</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <h2 class="section-title-center" data-i18n="contact_title">Let's build something</h2>
+      <div class="contact-card">
+        <form id="contactForm" onsubmit="return false;">
+          <div class="field">
+            <label for="f-name" data-i18n="field_name">Name</label>
+            <input id="f-name" type="text" data-i18n-ph="field_name_ph" placeholder="Your name" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-email" data-i18n="field_email">Email</label>
+            <input id="f-email" type="email" placeholder="you@company.com" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="f-msg" data-i18n="field_msg">Message</label>
+            <textarea id="f-msg" data-i18n-ph="field_msg_ph" placeholder="Tell me about the project..."></textarea>
+          </div>
+          <a class="btn btn-primary" id="sendBtn" href="#" data-i18n="send_btn">Send message →</a>
+        </form>
+        <div class="contact-side">
+          <h3 data-i18n="contact_side_title">Reach me directly</h3>
+          <a class="contact-email-pill" href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.zainwahbi@gmail.com" target="_blank" rel="noopener"><span class="email-ic">✉</span> eng.zainwahbi@gmail.com</a>
+          <div class="social-circle-row">
+            <a class="social-circle" href="https://mail.google.com/mail/?view=cm&fs=1&to=eng.zainwahbi@gmail.com" target="_blank" rel="noopener" aria-label="Email" title="Email">✉</a>
+            <a class="social-circle" href="https://www.linkedin.com/in/zain-wahbi-858897413" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">in</a>
+            <a class="social-circle" href="https://github.com/Zain-Wahbi" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 496 512" width="20" height="20" fill="currentColor"><path d="M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/></svg></a>
+            <a class="social-circle" href="https://t.me/ZainW72" target="_blank" rel="noopener" aria-label="Telegram" title="Telegram"><svg viewBox="0 0 496 512" width="20" height="20" fill="currentColor"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zM362 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7.2-.7.3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3.7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6.5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 362 176.7z"/></svg></a>
+            <a class="social-circle" href="https://x.com/ZainWahbi" target="_blank" rel="noopener" aria-label="X / Twitter" title="X / Twitter">𝕏</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <span data-i18n="footer_copy">© 2026 Zain Wahbi. All rights reserved.</span>
+    <span data-i18n="meta_location_val">Hama, Syria</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
