@@ -65,7 +65,17 @@
     -webkit-background-clip:text; background-clip:text; color:transparent;
   }
   body.lang-ar .brand{font-family:var(--arfont);}
-  @media(max-width:560px){ .brand{display:none;} }
+  .mobile-logo{
+    display:none; width:36px; height:36px; border-radius:10px; flex-shrink:0;
+    background:linear-gradient(150deg, var(--accent) 0%, var(--accent-deep) 100%);
+    align-items:center; justify-content:center;
+    font-family:var(--display); font-size:17px; font-weight:700; color:#08131F;
+    box-shadow:0 6px 16px -6px rgba(59,158,255,0.55), inset 0 0 0 1px rgba(255,255,255,0.15);
+  }
+  @media(max-width:560px){
+    .brand{display:none;}
+    .mobile-logo{display:flex;}
+  }
 
   .navlinks{display:none; gap:26px; font-size:14px; color:var(--text-dim); font-weight:500;}
   @media(min-width:880px){ .navlinks{display:flex;} }
@@ -86,7 +96,12 @@
   }
   .cv-btn:hover{background:var(--accent-soft); border-color:var(--accent);}
   .ext-ic{font-size:11px;}
-  @media(max-width:640px){ .cv-btn .cv-label{display:none;} .cv-btn{padding:9px 12px;} }
+  .cv-label-mobile{display:none; font-size:12.5px; font-weight:700;}
+  @media(max-width:640px){
+    .cv-btn .cv-label{display:none;}
+    .cv-btn .cv-label-mobile{display:inline;}
+    .cv-btn{padding:9px 13px;}
+  }
   .nav-cta{
     font-size:13.5px; font-weight:600; background:var(--accent); color:#08131F;
     border-radius:8px; padding:9px 18px; transition:opacity .15s; white-space:nowrap;
@@ -311,4 +326,5 @@
     .social-circle svg{width:17px; height:17px;}
     .contact-email-pill{font-size:13.5px; padding:10px 14px;}
     .logo-mark{width:34px; height:34px; font-size:16px;}
+    .mobile-logo{width:34px; height:34px; font-size:16px;}
   }
