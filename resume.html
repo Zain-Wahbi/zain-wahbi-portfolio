@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zain Wahbi — Resume</title>
+<meta name="description" content="Zain Wahbi — Backend & ML Engineer. Laravel/PHP REST APIs and applied Machine Learning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233B9EFF'/%3E%3Cstop offset='1' stop-color='%230077B5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='69' font-family='Arial,sans-serif' font-weight='700' font-size='58' fill='%2308131F' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E">
+
+<style>
+  :root{
+    --ink:#161B22;
+    --ink-soft:#3D4551;
+    --ink-faint:#6B7280;
+    --line:#E3E7EC;
+    --accent:#0077B5;
+    --accent-soft:#EAF3FA;
+    --paper:#ffffff;
+    --canvas:#EEF1F5;
+    --display:'Space Grotesk', sans-serif;
+    --sans:'Inter', -apple-system, sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{
+    background:var(--canvas); color:var(--ink); font-family:var(--sans);
+    font-size:9.6pt; line-height:1.42; -webkit-font-smoothing:antialiased;
+    padding:26px 0;
+  }
+  .page{
+    max-width:790px; margin:0 auto; background:var(--paper);
+    border:1px solid var(--line); box-shadow:0 18px 40px -20px rgba(15,23,42,0.18);
+    padding:34px 42px 30px;
+  }
+
+  /* header */
+  .head{margin-bottom:14px;}
+  .head-text h1{
+    font-family:var(--display); font-size:20pt; font-weight:700; letter-spacing:-0.01em;
+    color:var(--ink); line-height:1.1;
+  }
+  .head-role{
+    font-family:var(--display); font-size:11pt; font-weight:600; color:var(--accent); margin-top:2px;
+  }
+  .contact-line{
+    margin-top:16px; font-size:8.6pt; color:var(--ink-soft);
+    display:flex; flex-wrap:wrap; gap:4px 0; border-top:1px solid var(--line); padding-top:10px;
+  }
+  .contact-line a{color:var(--accent); text-decoration:none; font-weight:500;}
+  .contact-line span.sep{color:var(--line); margin:0 9px;}
+
+  /* section titles */
+  .section{margin-top:15px;}
+  .section-title{
+    font-family:var(--display); font-size:8.6pt; font-weight:700; letter-spacing:0.09em;
+    text-transform:uppercase; color:var(--accent); margin-bottom:7px;
+    display:flex; align-items:center; gap:9px;
+  }
+  .section-title::after{content:""; flex:1; height:1px; background:var(--line);}
+
+  .summary{font-size:9.1pt; color:var(--ink-soft); text-align:left; line-height:1.5;}
+
+  /* skills */
+  .skills-list{margin-top:2px;}
+  .skills-list p{font-size:8.8pt; color:var(--ink-soft); margin-bottom:3px;}
+  .skills-list b{color:var(--ink); font-weight:700;}
+
+  /* projects */
+  .proj{margin-bottom:9px;}
+  .proj:last-child{margin-bottom:0;}
+  .proj-head{display:flex; justify-content:space-between; align-items:baseline; gap:10px;}
+  .proj-name{font-family:var(--display); font-weight:600; font-size:9.6pt; color:var(--ink);}
+  .proj-name a{color:var(--ink); text-decoration:none;}
+  .proj-date{font-size:8.3pt; font-weight:600; color:var(--ink-faint); white-space:nowrap;}
+  .proj-tags{font-size:7.8pt; color:var(--accent); margin-top:1px; font-weight:500;}
+  .proj-desc{font-size:8.6pt; color:var(--ink-soft); margin-top:3px;}
+  ul.proj-bullets{list-style:none; margin-top:3px;}
+  ul.proj-bullets li{
+    font-size:8.4pt; color:var(--ink-soft); line-height:1.4; margin-bottom:1.5px;
+    padding-left:12px; position:relative;
+  }
+  ul.proj-bullets li::before{
+    content:"-"; position:absolute; left:0; color:var(--accent); font-weight:700;
+  }
+
+  /* education / certs */
+  .edu-line{font-size:8.8pt; color:var(--ink-soft);}
+  .edu-line strong{color:var(--ink); font-weight:700;}
+  .edu-meta{font-size:8.3pt; color:var(--ink-faint); margin-top:2px;}
+
+  .cert-list{list-style:none; margin-top:2px;}
+  .cert-list li{
+    font-size:8.5pt; color:var(--ink-soft); padding-left:12px; position:relative; margin-bottom:2px;
+  }
+  .cert-list li::before{content:"-"; position:absolute; left:0; color:var(--accent); font-weight:700; font-size:8.4pt;}
+  .cert-list b{color:var(--ink); font-weight:600;}
+
+  .foot-row{margin-top:15px;}
+  .foot-row .section{margin-top:12px;}
+  .foot-row .section:first-child{margin-top:0;}
+
+  .lang-list{font-size:8.6pt; color:var(--ink-soft);}
+  .lang-list li{list-style:none; margin-bottom:2px;}
+  .lang-list b{color:var(--ink); font-weight:600;}
+
+  /* print */
+  @media print{
+    @page{ size:A4 portrait; margin:0.9cm 1.1cm; }
+    html, body{ background:#fff; padding:0; }
+    .page{ box-shadow:none; border:none; max-width:100%; padding:0; }
+  }
+
+  @media screen and (max-width:640px){
+    body{padding:0; font-size:11px;}
+    .page{padding:22px 18px; border:none; box-shadow:none;}
+    .proj-head{flex-direction:column; gap:1px;}
+  }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <div class="head">
+    <div class="head-text">
+      <h1>Zain Wahbi</h1>
+      <div class="head-role">Backend &amp; ML Engineer</div>
+    </div>
+  </div>
+
+  <div class="contact-line">
+    <a href="mailto:eng.zainwahbi@gmail.com">eng.zainwahbi@gmail.com</a>
+    <span class="sep">|</span>
+    <a href="https://github.com/Zain-Wahbi" target="_blank">github.com/Zain-Wahbi</a>
+    <span class="sep">|</span>
+    <a href="https://www.linkedin.com/in/zain-wahbi-858897413" target="_blank">linkedin.com/in/zain-wahbi</a>
+    <span class="sep">|</span>
+    <a href="https://zain-wahbi.github.io/zain-wahbi-portfolio/" target="_blank">zain-wahbi.github.io</a>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Summary</div>
+    <p class="summary">Computer Engineering graduate specializing in Laravel/PHP REST APIs and applied Machine Learning. I turn messy requirements — and messy data — into systems people can rely on. Comfortable across the full stack: authentication, payments and background jobs on the backend, and ML pipelines that go from raw data to a served prediction endpoint.</p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-list">
+      <p><b>Backend &amp; APIs:</b> PHP, Laravel, REST APIs, Sanctum, Stripe, FastAPI, MySQL</p>
+      <p><b>Machine Learning &amp; Data:</b> Python, Pandas, Scikit-learn, Random Forest, XGBoost, LightGBM, TabNet</p>
+      <p><b>Frontend (basic):</b> HTML, CSS, JavaScript, Tailwind</p>
+      <p><b>Tools &amp; Principles:</b> Git, GitHub, OOP, SOLID Principles, MVC, Design Patterns, DRY, Excel</p>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="section">
+    <div class="section-title">Projects</div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <span class="proj-name">Fraud Bank — Financial Fraud Detection <span style="font-weight:400; color:var(--ink-faint);">(Graduation Project)</span></span>
+        <span class="proj-date">Feb – Jul 2026</span>
+      </div>
+      <div class="proj-tags">Python · Random Forest · LightGBM · XGBoost · TabNet · FastAPI · Laravel</div>
+      <div class="proj-desc">Compared four ML models on 5 million transactions, engineered 30+ features, and shipped the winner behind a full Laravel dashboard with live simulation.</div>
+      <ul class="proj-bullets">
+        <li>Random Forest, XGBoost, LightGBM and TabNet trained on a stratified 4M-record split with 3:1 undersampling</li>
+        <li>LightGBM selected for deployment — best F1-score and fastest inference, threshold tuned to 0.94</li>
+        <li>FastAPI backend (predict, batch-predict, explain, health) with a 9-step preprocessing pipeline</li>
+        <li>Bilingual (AR/EN) Laravel dashboard with live transaction simulation, Chart.js analytics, and rule-based fraud explanations</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/shop-api" target="_blank">ShopAPI</a></span>
+        <span class="proj-date">Jun 2026</span>
+      </div>
+      <div class="proj-tags">Laravel · Sanctum · Stripe · MySQL · Swagger</div>
+      <div class="proj-desc">Full-featured e-commerce REST API — 12 relational tables covering auth, products, cart, coupons, orders and Stripe payments end to end.</div>
+      <ul class="proj-bullets">
+        <li>Sanctum token auth with remember-me sessions, email verification and rate-limited endpoints (10 req/min)</li>
+        <li>Stripe Payment Intent integration with webhook verification and DB-transaction stock locking to prevent race conditions</li>
+        <li>Queued email notifications (welcome, order confirmation, payment receipt) via background jobs</li>
+        <li>Full admin panel for products, categories, orders, coupons and users, plus interactive Swagger/OpenAPI docs</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/todo-app-api" target="_blank">Todo App API</a></span>
+        <span class="proj-date">May 2026</span>
+      </div>
+      <div class="proj-tags">Laravel · Sanctum · MySQL · PHPUnit</div>
+      <div class="proj-desc">RESTful task-management API built with Laravel 11 and Sanctum, fully tested and deployed live.</div>
+      <ul class="proj-bullets">
+        <li>Full task &amp; category CRUD with filtering, search and cached dashboard statistics</li>
+        <li>Role-based admin panel for managing users and tasks, with rate limiting and request logging</li>
+        <li>31 automated tests (73 assertions) via PHPUnit</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/airline-travel-company-v1" target="_blank">ATC — Airline Travel Company</a></span>
+        <span class="proj-date">Apr – Jun 2025</span>
+      </div>
+      <div class="proj-tags">PHP · MySQL · jQuery · Chart.js</div>
+      <div class="proj-desc">Full-stack airline booking system with three role-based experiences — admin, employee and customer — sharing one codebase.</div>
+      <ul class="proj-bullets">
+        <li>Real-time flight &amp; seat management with auto seat generation and status tracking (upcoming → departed → arrived)</li>
+        <li>Transactional booking flow with live seat locking to prevent double-booking, plus automatic fare calculation</li>
+        <li>Digital tickets with scannable QR codes and a print-ready boarding pass layout</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION + LANGUAGES -->
+  <div class="foot-row">
+    <div class="section">
+      <div class="section-title">Education</div>
+      <p class="edu-line"><strong>Al-Wataniya Private University</strong> — B.Eng, Computer Engineering</p>
+      <p class="edu-meta">Sep 2021 – Jul 2026</p>
+      <p class="edu-meta">Coursework: PHP-based web applications, Java programming, database management systems.</p>
+    </div>
+    <div class="section">
+      <div class="section-title">Languages</div>
+      <ul class="lang-list">
+        <li><b>Arabic</b> — Native</li>
+        <li><b>English</b> — Professional working proficiency</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <ul class="cert-list">
+      <li><b>Mastering Laravel Framework and PHP</b> — Coursera</li>
+      <li><b>Building Web Applications in PHP</b> — Coursera, University of Michigan</li>
+      <li><b>JavaScript, jQuery, and JSON</b> — Coursera, University of Michigan</li>
+      <li><b>Data Analysis with Python</b> — Coursera, IBM</li>
+      <li><b>Introduction to Data Analytics</b> — Coursera, IBM</li>
+    </ul>
+  </div>
+
+</main>
+</body>
+</html>
