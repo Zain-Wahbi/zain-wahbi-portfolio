@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Zain Wahbi — Resume</title>
 <meta name="description" content="Zain Wahbi — Backend & ML Engineer. Laravel/PHP REST APIs and applied Machine Learning.">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Zain Wahbi — Resume">
+<meta property="og:description" content="Backend & ML Engineer specializing in Laravel/PHP REST APIs and applied Machine Learning.">
+<meta property="og:url" content="https://zain-wahbi.github.io/zain-wahbi-portfolio/resume.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Zain Wahbi — Resume">
+<meta name="twitter:description" content="Backend & ML Engineer specializing in Laravel/PHP REST APIs and applied Machine Learning.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -101,6 +108,22 @@
   .foot-row .section{margin-top:12px;}
   .foot-row .section:first-child{margin-top:0;}
 
+  /* download button */
+  .download-bar{
+    position:fixed; top:18px; right:18px; z-index:10;
+  }
+  .download-btn{
+    font-family:var(--sans); font-size:12.5px; font-weight:600; color:#fff;
+    background:var(--accent); border:none; border-radius:8px; padding:10px 16px;
+    display:inline-flex; align-items:center; gap:7px; cursor:pointer;
+    box-shadow:0 8px 18px -8px rgba(0,119,181,0.55); transition:opacity .15s, transform .15s;
+  }
+  .download-btn:hover{opacity:0.9; transform:translateY(-1px);}
+  @media print{ .download-bar{display:none;} }
+  @media screen and (max-width:640px){
+    .download-bar{position:static; display:flex; justify-content:flex-end; margin:0 auto 10px; max-width:790px; padding:0 18px;}
+  }
+
   .lang-list{font-size:8.6pt; color:var(--ink-soft);}
   .lang-list li{list-style:none; margin-bottom:2px;}
   .lang-list b{color:var(--ink); font-weight:600;}
@@ -120,6 +143,11 @@
 </style>
 </head>
 <body>
+<div class="download-bar">
+  <button class="download-btn" onclick="window.print()" aria-label="Download resume as PDF">
+    <span>Download PDF</span> <span aria-hidden="true">↓</span>
+  </button>
+</div>
 <main class="page">
 
   <div class="head">
