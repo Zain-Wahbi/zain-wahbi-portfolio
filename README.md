@@ -2,8 +2,10 @@
 
 Personal portfolio website for Zain Wahbi, Backend & ML Engineer.
 
-**Live:** https://Zain-Wahbi.github.io/zain-wahbi-portfolio/
-**Resume:** [zain-wahbi.github.io/zain-wahbi-portfolio/resume.html](https://zain-wahbi.github.io/zain-wahbi-portfolio/resume.html)
+|  |  |
+|---|---|
+| 🌐 **Live site** | [zain-wahbi.github.io/zain-wahbi-portfolio](https://zain-wahbi.github.io/zain-wahbi-portfolio/) |
+| 📄 **Resume** | [zain-wahbi.github.io/zain-wahbi-portfolio/resume.html](https://zain-wahbi.github.io/zain-wahbi-portfolio/resume.html) |
 
 ## Stack
 
@@ -32,9 +34,11 @@ HTML · CSS · Vanilla JavaScript
 
 ## Contact
 
-- Email: eng.zainwahbi@gmail.com
-- GitHub: [@Zain-Wahbi](https://github.com/Zain-Wahbi)
-- LinkedIn: [zain-wahbi](https://www.linkedin.com/in/zain-wahbi-858897413)
+| | |
+|---|---|
+| ✉️ Email | [eng.zainwahbi@gmail.com](mailto:eng.zainwahbi@gmail.com) |
+| 💻 GitHub | [@Zain-Wahbi](https://github.com/Zain-Wahbi) |
+| 💼 LinkedIn | [zain-wahbi](https://www.linkedin.com/in/zain-wahbi) |
 
 ---
 
