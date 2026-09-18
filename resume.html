@@ -56,11 +56,15 @@
     font-family:var(--display); font-size:11pt; font-weight:600; color:var(--accent); margin-top:2px;
   }
   .contact-line{
-    margin-top:16px; font-size:8.6pt; color:var(--ink-soft);
-    display:flex; flex-wrap:wrap; gap:4px 0; border-top:1px solid var(--line); padding-top:10px;
+    margin-top:16px; font-size:8.2pt; color:var(--ink-soft);
+    display:flex; flex-wrap:nowrap; align-items:center; border-top:1px solid var(--line); padding-top:10px;
+    white-space:nowrap;
   }
   .contact-line a{color:var(--accent); text-decoration:none; font-weight:500;}
-  .contact-line span.sep{color:var(--line); margin:0 9px;}
+  .contact-line span.sep{color:var(--line); margin:0 6px;}
+  @media screen and (max-width:640px){
+    .contact-line{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  }
 
   /* section titles */
   .section{margin-top:15px;}
@@ -166,7 +170,7 @@
     <span class="sep">|</span>
     <a href="https://github.com/Zain-Wahbi" target="_blank">github.com/Zain-Wahbi</a>
     <span class="sep">|</span>
-    <a href="https://www.linkedin.com/in/zain-wahbi-858897413" target="_blank">linkedin.com/in/zain-wahbi</a>
+    <a href="https://www.linkedin.com/in/zain-wahbi" target="_blank">linkedin.com/in/zain-wahbi</a>
     <span class="sep">|</span>
     <a href="https://zain-wahbi.github.io/zain-wahbi-portfolio/" target="_blank">zain-wahbi.github.io</a>
   </div>
@@ -194,7 +198,7 @@
 
     <div class="proj">
       <div class="proj-head">
-        <span class="proj-name">Fraud Bank — Financial Fraud Detection <span style="font-weight:400; color:var(--ink-faint);">(Graduation Project)</span></span>
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/fraud-detection-system" target="_blank">Fraud Bank — Financial Fraud Detection</a> <span style="font-weight:400; color:var(--ink-faint);">(Graduation Project)</span></span>
         <span class="proj-date">Feb – Jul 2026</span>
       </div>
       <div class="proj-tags">Python · Random Forest · LightGBM · XGBoost · TabNet · FastAPI · Laravel</div>
@@ -204,6 +208,21 @@
         <li>LightGBM selected for deployment — best F1-score and fastest inference, threshold tuned to 0.94</li>
         <li>FastAPI backend (predict, batch-predict, explain, health) with a 9-step preprocessing pipeline</li>
         <li>Bilingual (AR/EN) Laravel dashboard with live transaction simulation, Chart.js analytics, and rule-based fraud explanations</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/ATC-V2" target="_blank">ATC — Airline Travel Company</a></span>
+        <span class="proj-date">Class project 2025 · Rebuilt 2026</span>
+      </div>
+      <div class="proj-tags">Laravel 12 · Filament 3 · Livewire/Volt · Laravel Reverb · Spatie Permission · MySQL · Pest</div>
+      <div class="proj-desc">Originally a university semester project (framework-free PHP/MySQL). Rebuilt from the ground up as ATC v2 — a production-style Laravel application built with a two-developer team, feature branches, PR review, and a protected main branch.</div>
+      <ul class="proj-bullets">
+        <li>Two structurally separate authentication systems (staff vs. customers) on distinct guards and tables — not just role checks</li>
+        <li>Real-time seat availability broadcast to customers via Laravel Reverb WebSockets as admins book or release seats</li>
+        <li>Computed (not stored) flight status derived live from departure time and duration, eliminating stale-status bugs</li>
+        <li>Full Arabic/English localization with proper RTL typography, plus a Filament admin panel with CSV/XLSX export and Spatie activity logging</li>
       </ul>
     </div>
 
@@ -233,20 +252,6 @@
         <li>Full task &amp; category CRUD with filtering, search and cached dashboard statistics</li>
         <li>Role-based admin panel for managing users and tasks, with rate limiting and request logging</li>
         <li>31 automated tests (73 assertions) via PHPUnit</li>
-      </ul>
-    </div>
-
-    <div class="proj">
-      <div class="proj-head">
-        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/airline-travel-company-v1" target="_blank">ATC — Airline Travel Company</a></span>
-        <span class="proj-date">Apr – Jun 2025</span>
-      </div>
-      <div class="proj-tags">PHP · MySQL · jQuery · Chart.js</div>
-      <div class="proj-desc">Full-stack airline booking system with three role-based experiences — admin, employee and customer — sharing one codebase.</div>
-      <ul class="proj-bullets">
-        <li>Real-time flight &amp; seat management with auto seat generation and status tracking (upcoming → departed → arrived)</li>
-        <li>Transactional booking flow with live seat locking to prevent double-booking, plus automatic fare calculation</li>
-        <li>Digital tickets with scannable QR codes and a print-ready boarding pass layout</li>
       </ul>
     </div>
   </div>
