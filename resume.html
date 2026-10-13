@@ -141,6 +141,7 @@
     @page{ size:A4 portrait; margin:0.9cm 1.1cm; }
     html, body{ background:#fff; padding:0; }
     .page{ box-shadow:none; border:none; max-width:100%; padding:0; }
+    .proj{ break-inside:avoid; }
   }
 
   @media screen and (max-width:640px){
@@ -186,7 +187,7 @@
     <div class="section-title">Technical Skills</div>
     <div class="skills-list">
       <p><b>Backend &amp; APIs:</b> PHP, Laravel, REST APIs, Sanctum, Stripe, FastAPI, MySQL</p>
-      <p><b>Machine Learning &amp; Data:</b> Python, Pandas, Scikit-learn, Random Forest, XGBoost, LightGBM, TabNet</p>
+      <p><b>Machine Learning &amp; Data:</b> Python, Pandas, Scikit-learn, Matplotlib, Jupyter, Random Forest, XGBoost, LightGBM, TabNet</p>
       <p><b>Frontend (basic):</b> HTML, CSS, JavaScript, Tailwind</p>
       <p><b>Tools &amp; Principles:</b> Git, GitHub, OOP, SOLID Principles, MVC, Design Patterns, DRY, Excel</p>
     </div>
@@ -208,6 +209,19 @@
         <li>LightGBM selected for deployment — best F1-score and fastest inference, threshold tuned to 0.94</li>
         <li>FastAPI backend (predict, batch-predict, explain, health) with a 9-step preprocessing pipeline</li>
         <li>Bilingual (AR/EN) Laravel dashboard with live transaction simulation, Chart.js analytics, and rule-based fraud explanations</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/tech-salary-analysis" target="_blank">Tech Salary Analysis</a></span>
+        <span class="proj-date">Sep – Oct 2026</span>
+      </div>
+      <div class="proj-tags">Python · Pandas · Scikit-learn · Jupyter · Matplotlib</div>
+      <ul class="proj-bullets">
+        <li>Analyzed 21.7K responses from the Stack Overflow Developer Survey 2025 to quantify what drives tech salaries; found that country dominates (US median $150K vs India $19K), with experience, role and remote work adding smaller effects</li>
+        <li>Built a leakage-free scikit-learn pipeline (gradient boosting on log salary) that predicts 47% of held-out salaries within 25%, versus 40% for a country-median baseline</li>
+        <li>Found that a single prediction range covered only 41% of salaries in Ukraine; recalibrated per country to reach 80.4% coverage on held-out data, and shipped the model as a command-line tool</li>
       </ul>
     </div>
 
