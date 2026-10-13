@@ -9,16 +9,26 @@ Personal portfolio website for Zain Wahbi, Backend & ML Engineer.
 
 ## Stack
 
-HTML · CSS · Vanilla JavaScript
+HTML · CSS · Vanilla JavaScript — no build step, deployable as-is on GitHub Pages.
 
 ## Features
 
 - Dark, API-inspired theme
-- Bilingual EN / AR with full RTL support
+- Bilingual EN / AR with full RTL support (language choice is remembered)
 - Fully responsive (desktop, tablet, mobile)
-- Projects, education, and certifications pulled from real work: ShopAPI, Fraud Bank, Todo App API, and ATC — Airline Travel Company
+- Contact form with email validation that opens the visitor's mail app
 - Standalone, ATS-friendly HTML resume with a one-click "Download PDF" button
-- No build step required — plain HTML/CSS/JS, deployable as-is
+- Open Graph / Twitter preview cards for link sharing
+
+## Projects featured
+
+| Project | Repo |
+|---|---|
+| Fraud Bank — financial fraud detection (graduation project) | [fraud-detection-system](https://github.com/Zain-Wahbi/fraud-detection-system) |
+| ATC v2 — Airline Travel Company | [ATC-V2](https://github.com/Zain-Wahbi/ATC-V2) |
+| ShopAPI — e-commerce REST API | [shop-api](https://github.com/Zain-Wahbi/shop-api) |
+| Todo App API | [todo-app-api](https://github.com/Zain-Wahbi/todo-app-api) |
+| Tech Salary Analysis — Stack Overflow Survey 2025 | [tech-salary-analysis](https://github.com/Zain-Wahbi/tech-salary-analysis) |
 
 ## Project structure
 
@@ -29,7 +39,8 @@ HTML · CSS · Vanilla JavaScript
 ├── style.css
 ├── script.js
 └── assets/
-    └── photo_2026-06-03_11-59-59.jpg
+    ├── photo_2026-06-03_11-59-59.jpg
+    └── og-image.png
 ```
 
 ## Contact
