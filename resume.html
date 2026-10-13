@@ -23,14 +23,8 @@
 
 <style>
   :root{
-    --ink:#161B22;
-    --ink-soft:#3D4551;
-    --ink-faint:#6B7280;
-    --line:#E3E7EC;
-    --accent:#0077B5;
-    --accent-soft:#EAF3FA;
-    --paper:#ffffff;
-    --canvas:#EEF1F5;
+    --ink:#161B22; --ink-soft:#3D4551; --ink-faint:#6B7280; --line:#E3E7EC;
+    --accent:#0077B5; --accent-soft:#EAF3FA; --paper:#ffffff; --canvas:#EEF1F5;
     --display:'Space Grotesk', sans-serif;
     --sans:'Inter', -apple-system, sans-serif;
   }
@@ -46,17 +40,15 @@
     padding:34px 42px 30px;
   }
 
-  /* header */
   .head{margin-bottom:14px;}
   .head-text h1{
     font-family:var(--display); font-size:20pt; font-weight:700; letter-spacing:-0.01em;
     color:var(--ink); line-height:1.1;
   }
-  .head-role{
-    font-family:var(--display); font-size:11pt; font-weight:600; color:var(--accent); margin-top:2px;
-  }
+  .head-role{font-family:var(--display); font-size:11pt; font-weight:600; color:var(--accent); margin-top:2px;}
+  .head-loc{font-size:9pt; color:var(--ink-faint); margin-top:2px;}
   .contact-line{
-    margin-top:16px; font-size:9.4pt; color:var(--ink-soft);
+    margin-top:14px; font-size:9.4pt; color:var(--ink-soft);
     display:flex; flex-wrap:nowrap; align-items:center; border-top:1px solid var(--line); padding-top:10px;
     white-space:nowrap;
   }
@@ -66,7 +58,6 @@
     .contact-line{overflow-x:auto; -webkit-overflow-scrolling:touch;}
   }
 
-  /* section titles */
   .section{margin-top:15px;}
   .section-title{
     font-family:var(--display); font-size:8.6pt; font-weight:700; letter-spacing:0.09em;
@@ -77,12 +68,10 @@
 
   .summary{font-size:9.1pt; color:var(--ink-soft); text-align:left; line-height:1.5;}
 
-  /* skills */
   .skills-list{margin-top:2px;}
   .skills-list p{font-size:8.8pt; color:var(--ink-soft); margin-bottom:3px;}
   .skills-list b{color:var(--ink); font-weight:700;}
 
-  /* projects */
   .proj{margin-bottom:9px;}
   .proj:last-child{margin-bottom:0;}
   .proj-head{display:flex; justify-content:space-between; align-items:baseline; gap:10px;}
@@ -96,19 +85,14 @@
     font-size:8.4pt; color:var(--ink-soft); line-height:1.4; margin-bottom:1.5px;
     padding-left:12px; position:relative;
   }
-  ul.proj-bullets li::before{
-    content:"-"; position:absolute; left:0; color:var(--accent); font-weight:700;
-  }
+  ul.proj-bullets li::before{content:"-"; position:absolute; left:0; color:var(--accent); font-weight:700;}
 
-  /* education / certs */
   .edu-line{font-size:8.8pt; color:var(--ink-soft);}
   .edu-line strong{color:var(--ink); font-weight:700;}
   .edu-meta{font-size:8.3pt; color:var(--ink-faint); margin-top:2px;}
 
   .cert-list{list-style:none; margin-top:2px;}
-  .cert-list li{
-    font-size:8.5pt; color:var(--ink-soft); padding-left:12px; position:relative; margin-bottom:2px;
-  }
+  .cert-list li{font-size:8.5pt; color:var(--ink-soft); padding-left:12px; position:relative; margin-bottom:2px;}
   .cert-list li::before{content:"-"; position:absolute; left:0; color:var(--accent); font-weight:700; font-size:8.4pt;}
   .cert-list b{color:var(--ink); font-weight:600;}
 
@@ -116,10 +100,7 @@
   .foot-row .section{margin-top:12px;}
   .foot-row .section:first-child{margin-top:0;}
 
-  /* download button */
-  .download-bar{
-    position:fixed; top:18px; right:18px; z-index:10;
-  }
+  .download-bar{position:fixed; top:18px; right:18px; z-index:10;}
   .download-btn{
     font-family:var(--sans); font-size:12.5px; font-weight:600; color:#fff;
     background:var(--accent); border:none; border-radius:8px; padding:10px 16px;
@@ -136,12 +117,11 @@
   .lang-list li{list-style:none; margin-bottom:2px;}
   .lang-list b{color:var(--ink); font-weight:600;}
 
-  /* print */
   @media print{
     @page{ size:A4 portrait; margin:0.9cm 1.1cm; }
     html, body{ background:#fff; padding:0; }
     .page{ box-shadow:none; border:none; max-width:100%; padding:0; }
-    .proj{ break-inside:avoid; }
+    .proj, .section{ break-inside:avoid; }
   }
 
   @media screen and (max-width:640px){
@@ -163,43 +143,42 @@
     <div class="head-text">
       <h1>Zain Wahbi</h1>
       <div class="head-role">Backend &amp; ML Engineer</div>
+      <div class="head-loc">Hama, Syria · Open to remote work</div>
     </div>
   </div>
 
   <div class="contact-line">
     <a href="mailto:eng.zainwahbi@gmail.com">eng.zainwahbi@gmail.com</a>
     <span class="sep">|</span>
-    <a href="https://github.com/Zain-Wahbi" target="_blank">github.com/Zain-Wahbi</a>
+    <a href="https://github.com/Zain-Wahbi" target="_blank" rel="noopener">github.com/Zain-Wahbi</a>
     <span class="sep">|</span>
-    <a href="https://www.linkedin.com/in/zain-wahbi" target="_blank">linkedin.com/in/zain-wahbi</a>
+    <a href="https://www.linkedin.com/in/zain-wahbi" target="_blank" rel="noopener">linkedin.com/in/zain-wahbi</a>
     <span class="sep">|</span>
-    <a href="https://zain-wahbi.github.io/zain-wahbi-portfolio/" target="_blank">zain-wahbi.github.io</a>
+    <a href="https://zain-wahbi.github.io/zain-wahbi-portfolio/" target="_blank" rel="noopener">zain-wahbi.github.io</a>
   </div>
 
-  <!-- SUMMARY -->
   <div class="section">
     <div class="section-title">Summary</div>
-    <p class="summary">Computer Engineering graduate specializing in Laravel/PHP REST APIs and applied Machine Learning. I turn messy requirements — and messy data — into systems people can rely on. Comfortable across the full stack: authentication, payments and background jobs on the backend, and ML pipelines that go from raw data to a served prediction endpoint.</p>
+    <p class="summary">Computer Engineering graduate specializing in Laravel/PHP REST APIs and applied Machine Learning. Turns messy requirements and messy data into systems people can rely on. Comfortable across the stack: authentication, payments and background jobs on the backend, and ML pipelines that go from raw data to a served prediction endpoint.</p>
   </div>
 
-  <!-- SKILLS -->
   <div class="section">
     <div class="section-title">Technical Skills</div>
     <div class="skills-list">
-      <p><b>Backend &amp; APIs:</b> PHP, Laravel, REST APIs, Sanctum, Stripe, FastAPI, MySQL</p>
-      <p><b>Machine Learning &amp; Data:</b> Python, Pandas, Scikit-learn, Matplotlib, Jupyter, Random Forest, XGBoost, LightGBM, TabNet</p>
-      <p><b>Frontend (basic):</b> HTML, CSS, JavaScript, Tailwind</p>
-      <p><b>Tools &amp; Principles:</b> Git, GitHub, OOP, SOLID Principles, MVC, Design Patterns, DRY, Excel</p>
+      <p><b>Languages:</b> PHP, Python, JavaScript, Java, C++, R, SQL</p>
+      <p><b>Backend &amp; APIs:</b> Laravel, REST APIs, Sanctum, Stripe, FastAPI, MySQL</p>
+      <p><b>Machine Learning &amp; Data:</b> Pandas, NumPy, Matplotlib, Jupyter, Scikit-learn, Random Forest, XGBoost, LightGBM, TabNet, Excel</p>
+      <p><b>Frontend (basic):</b> HTML, CSS, JavaScript, Tailwind, jQuery, Chart.js</p>
+      <p><b>Tools &amp; Principles:</b> Git, GitHub, PHPUnit, Pest, Swagger/OpenAPI, OOP, SOLID, MVC, Design Patterns, DRY</p>
     </div>
   </div>
 
-  <!-- PROJECTS -->
   <div class="section">
     <div class="section-title">Projects</div>
 
     <div class="proj">
       <div class="proj-head">
-        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/fraud-detection-system" target="_blank">Fraud Bank — Financial Fraud Detection</a> <span style="font-weight:400; color:var(--ink-faint);">(Graduation Project)</span></span>
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/fraud-detection-system" target="_blank" rel="noopener">Fraud Bank — Financial Fraud Detection</a> <span style="font-weight:400; color:var(--ink-faint);">(Graduation Project)</span></span>
         <span class="proj-date">Feb – Jul 2026</span>
       </div>
       <div class="proj-tags">Python · Random Forest · LightGBM · XGBoost · TabNet · FastAPI · Laravel</div>
@@ -214,20 +193,7 @@
 
     <div class="proj">
       <div class="proj-head">
-        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/tech-salary-analysis" target="_blank">Tech Salary Analysis</a></span>
-        <span class="proj-date">Sep – Oct 2026</span>
-      </div>
-      <div class="proj-tags">Python · Pandas · Scikit-learn · Jupyter · Matplotlib</div>
-      <ul class="proj-bullets">
-        <li>Analyzed 21.7K responses from the Stack Overflow Developer Survey 2025 to quantify what drives tech salaries; found that country dominates (US median $150K vs India $19K), with experience, role and remote work adding smaller effects</li>
-        <li>Built a leakage-free scikit-learn pipeline (gradient boosting on log salary) that predicts 47% of held-out salaries within 25%, versus 40% for a country-median baseline</li>
-        <li>Found that a single prediction range covered only 41% of salaries in Ukraine; recalibrated per country to reach 80.4% coverage on held-out data, and shipped the model as a command-line tool</li>
-      </ul>
-    </div>
-
-    <div class="proj">
-      <div class="proj-head">
-        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/ATC-V2" target="_blank">ATC — Airline Travel Company</a></span>
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/ATC-V2" target="_blank" rel="noopener">ATC — Airline Travel Company</a></span>
         <span class="proj-date">Class project 2025 · Rebuilt 2026</span>
       </div>
       <div class="proj-tags">Laravel 12 · Filament 3 · Livewire/Volt · Laravel Reverb · Spatie Permission · MySQL · Pest</div>
@@ -242,7 +208,7 @@
 
     <div class="proj">
       <div class="proj-head">
-        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/shop-api" target="_blank">ShopAPI</a></span>
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/shop-api" target="_blank" rel="noopener">ShopAPI</a></span>
         <span class="proj-date">Jun 2026</span>
       </div>
       <div class="proj-tags">Laravel · Sanctum · Stripe · MySQL · Swagger</div>
@@ -257,20 +223,32 @@
 
     <div class="proj">
       <div class="proj-head">
-        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/todo-app-api" target="_blank">Todo App API</a></span>
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/todo-app-api" target="_blank" rel="noopener">Todo App API</a></span>
         <span class="proj-date">May 2026</span>
       </div>
       <div class="proj-tags">Laravel · Sanctum · MySQL · PHPUnit</div>
-      <div class="proj-desc">RESTful task-management API built with Laravel 11 and Sanctum, fully tested and deployed live.</div>
+      <div class="proj-desc">RESTful task-management API built with Laravel 11 and Sanctum, fully tested.</div>
       <ul class="proj-bullets">
         <li>Full task &amp; category CRUD with filtering, search and cached dashboard statistics</li>
         <li>Role-based admin panel for managing users and tasks, with rate limiting and request logging</li>
         <li>31 automated tests (73 assertions) via PHPUnit</li>
       </ul>
     </div>
+
+    <div class="proj">
+      <div class="proj-head">
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/tech-salary-analysis" target="_blank" rel="noopener">Tech Salary Analysis</a></span>
+        <span class="proj-date">Sep – Oct 2026</span>
+      </div>
+      <div class="proj-tags">Python 3.13 · Pandas · Scikit-learn · Jupyter</div>
+      <div class="proj-desc">End-to-end data analysis on the Stack Overflow Developer Survey 2025 — from raw survey data to a salary prediction model and a command-line tool.</div>
+      <ul class="proj-bullets">
+        <li>Data cleaning and exploratory analysis documented across six Jupyter notebooks</li>
+        <li>Salary prediction model built with Scikit-learn, packaged as a CLI predictor (v1.0.0)</li>
+      </ul>
+    </div>
   </div>
 
-  <!-- EDUCATION + LANGUAGES -->
   <div class="foot-row">
     <div class="section">
       <div class="section-title">Education</div>
