@@ -1,6 +1,6 @@
 const EMAIL = 'eng.zainwahbi@gmail.com';
 
-/* ---------- Contact form (opens the visitor's default mail app) ---------- */
+/* ---------- Contact form (opens Gmail compose) ---------- */
 document.getElementById('sendBtn').addEventListener('click', function (e) {
   e.preventDefault();
   const name = document.getElementById('f-name').value.trim();
@@ -21,7 +21,7 @@ document.getElementById('sendBtn').addEventListener('click', function (e) {
 
   const subject = encodeURIComponent('Portfolio contact from ' + (name || 'a visitor'));
   const body = encodeURIComponent((msg || '') + '\n\n— ' + (name || '') + ' (' + email + ')');
-  window.location.href = `mailto:${EMAIL}?subject=${subject}&body=${body}`;
+  window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}&su=${subject}&body=${body}`, '_blank', 'noopener');
 });
 document.getElementById('f-email').addEventListener('input', function () {
   document.getElementById('emailErr').hidden = true;
