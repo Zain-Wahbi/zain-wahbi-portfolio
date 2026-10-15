@@ -16,7 +16,7 @@ HTML · CSS · Vanilla JavaScript — no build step, deployable as-is on GitHub 
 - Dark, API-inspired theme
 - Bilingual EN / AR with full RTL support (language choice is remembered)
 - Fully responsive (desktop, tablet, mobile)
-- Contact form with email validation that opens the visitor's mail app
+- Contact form with email validation that opens a Gmail compose window
 - Standalone, ATS-friendly HTML resume with a one-click "Download PDF" button
 - Open Graph / Twitter preview cards for link sharing
 
@@ -47,7 +47,7 @@ HTML · CSS · Vanilla JavaScript — no build step, deployable as-is on GitHub 
 
 | | |
 |---|---|
-| ✉️ Email | [eng.zainwahbi@gmail.com](mailto:eng.zainwahbi@gmail.com) |
+| ✉️ Email | [eng.zainwahbi@gmail.com](https://mail.google.com/mail/?view=cm&fs=1&to=eng.zainwahbi@gmail.com) |
 | 💻 GitHub | [@Zain-Wahbi](https://github.com/Zain-Wahbi) |
 | 💼 LinkedIn | [zain-wahbi](https://www.linkedin.com/in/zain-wahbi) |
 
