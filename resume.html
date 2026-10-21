@@ -61,7 +61,7 @@
     white-space:nowrap;
   }
   .contact-line a{color:var(--accent); text-decoration:none; font-weight:500;}
-  .contact-line span.sep{color:var(--line); margin:0 12px;}
+  .contact-line span.sep{color:var(--line); margin:0 10px;}
   @media screen and (max-width:640px){
     .contact-line{overflow-x:auto; -webkit-overflow-scrolling:touch;}
   }
@@ -166,6 +166,8 @@
   </div>
 
   <div class="contact-line">
+    <span>Hama, Syria (Remote)</span>
+    <span class="sep">|</span>
     <a href="mailto:eng.zainwahbi@gmail.com">eng.zainwahbi@gmail.com</a>
     <span class="sep">|</span>
     <a href="https://github.com/Zain-Wahbi" target="_blank">github.com/Zain-Wahbi</a>
@@ -186,9 +188,9 @@
     <div class="section-title">Technical Skills</div>
     <div class="skills-list">
       <p><b>Backend &amp; APIs:</b> PHP, Laravel, REST APIs, Sanctum, Stripe, FastAPI, MySQL</p>
-      <p><b>Machine Learning &amp; Data:</b> Python, Pandas, Scikit-learn, Random Forest, XGBoost, LightGBM, TabNet</p>
+      <p><b>Machine Learning &amp; Data:</b> Python, Pandas, Scikit-learn, Random Forest, XGBoost, LightGBM, TabNet, Jupyter</p>
       <p><b>Frontend (basic):</b> HTML, CSS, JavaScript, Tailwind</p>
-      <p><b>Tools &amp; Principles:</b> Git, GitHub, OOP, SOLID Principles, MVC, Design Patterns, DRY, Excel</p>
+      <p><b>Tools &amp; Principles:</b> Git, GitHub, PHPUnit, Pest, Swagger/OpenAPI, OOP, SOLID Principles, MVC, Design Patterns, DRY, Excel</p>
     </div>
   </div>
 
@@ -243,11 +245,25 @@
 
     <div class="proj">
       <div class="proj-head">
+        <span class="proj-name"><a href="https://github.com/Zain-Wahbi/tech-salary-analysis" target="_blank">Tech Salary Analysis — Stack Overflow Survey 2025</a></span>
+        <span class="proj-date">Sep – Oct 2026</span>
+      </div>
+      <div class="proj-tags">Python · pandas · scikit-learn · Jupyter · Regression</div>
+      <div class="proj-desc">End-to-end analysis of 21.7K responses: documented data cleaning, exploratory analysis, and a salary prediction model with calibrated uncertainty ranges, shipped as a command line tool.</div>
+      <ul class="proj-bullets">
+        <li>Analyzed 21.7K responses from the Stack Overflow Developer Survey 2025 to quantify what drives tech salaries; found that country dominates (US median $150K vs India $19K), with experience, role and remote work adding smaller effects</li>
+        <li>Built a leakage-free scikit-learn pipeline (gradient boosting on log salary) that predicts 47% of held-out salaries within 25%, versus 40% for a country-median baseline</li>
+        <li>Found that a single prediction range covered only 41% of salaries in Ukraine; recalibrated per country to reach 80.4% coverage on held-out data</li>
+      </ul>
+    </div>
+
+    <div class="proj">
+      <div class="proj-head">
         <span class="proj-name"><a href="https://github.com/Zain-Wahbi/todo-app-api" target="_blank">Todo App API</a></span>
         <span class="proj-date">May 2026</span>
       </div>
       <div class="proj-tags">Laravel · Sanctum · MySQL · PHPUnit</div>
-      <div class="proj-desc">RESTful task-management API built with Laravel 11 and Sanctum, fully tested and deployed live.</div>
+      <div class="proj-desc">RESTful task-management API built with Laravel 11 and Sanctum, fully tested with PHPUnit.</div>
       <ul class="proj-bullets">
         <li>Full task &amp; category CRUD with filtering, search and cached dashboard statistics</li>
         <li>Role-based admin panel for managing users and tasks, with rate limiting and request logging</li>
@@ -281,7 +297,7 @@
       <li><b>JavaScript, jQuery, and JSON</b> — Coursera, University of Michigan</li>
       <li><b>Data Analysis with Python</b> — Coursera, IBM</li>
       <li><b>Introduction to Data Analytics</b> — Coursera, IBM</li>
-      <li><b>People &amp; Soft Skills: Essential for Professional Success</b> — Coursera, IBM</li>
+      <li><b>People &amp; Soft Skills: Essential for Professional Success</b> (Specialization) — Coursera, IBM</li>
     </ul>
   </div>
 
