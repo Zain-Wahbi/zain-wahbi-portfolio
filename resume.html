@@ -49,7 +49,7 @@
   /* header */
   .head{margin-bottom:14px; display:flex; align-items:center; justify-content:flex-start; gap:18px;}
   .head-photo{
-    width:92px; height:92px; border-radius:50%; object-fit:cover; flex-shrink:0;
+    width:112px; height:112px; border-radius:50%; object-fit:cover; flex-shrink:0;
     border:2px solid var(--accent-soft); box-shadow:0 0 0 1px var(--line);
     -webkit-print-color-adjust:exact; print-color-adjust:exact;
   }
@@ -62,11 +62,11 @@
   }
   .contact-line{
     margin-top:16px; font-size:9.4pt; color:var(--ink-soft);
-    display:flex; flex-wrap:nowrap; align-items:center; border-top:1px solid var(--line); padding-top:10px;
+    display:flex; flex-wrap:nowrap; align-items:center; justify-content:space-between; border-top:1px solid var(--line); padding-top:10px;
     white-space:nowrap;
   }
   .contact-line a{color:var(--accent); text-decoration:none; font-weight:500;}
-  .contact-line span.sep{color:var(--line); margin:0 10px;}
+  .contact-line span.sep{color:var(--line); margin:0;}
   .contact-line a{display:inline-flex; align-items:center; gap:5px;}
   .contact-line svg{width:13px; height:13px; flex-shrink:0; fill:none; stroke:var(--accent); stroke-width:2; stroke-linecap:round; stroke-linejoin:round;}
   .contact-line svg.fill{fill:var(--accent); stroke:none;}
@@ -155,7 +155,9 @@
     body{padding:0; font-size:11px;}
     .page{padding:22px 18px; border:none; box-shadow:none;}
     .proj-head{flex-direction:column; gap:1px;}
-    .head-photo{width:72px; height:72px;}
+    .head-photo{width:84px; height:84px;}
+    .contact-line{justify-content:flex-start;}
+    .contact-line span.sep{margin:0 10px;}
   }
 </style>
 </head>
