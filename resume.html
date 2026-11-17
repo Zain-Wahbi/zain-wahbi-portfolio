@@ -47,13 +47,7 @@
   }
 
   /* header */
-  .head{margin-bottom:14px; display:flex; align-items:center; justify-content:flex-start; gap:26px;}
-  .head-text{flex:1; min-width:0;}
-  .head-photo{
-    width:150px; height:150px; border-radius:50%; object-fit:cover; object-position:center; flex-shrink:0;
-    border:3px solid var(--accent-soft); box-shadow:0 0 0 1px var(--line);
-    -webkit-print-color-adjust:exact; print-color-adjust:exact;
-  }
+  .head{margin-bottom:14px;}
   .head-text h1{
     font-family:var(--display); font-size:24pt; font-weight:700; letter-spacing:-0.01em;
     color:var(--ink); line-height:1.1;
@@ -117,7 +111,9 @@
   .cert-list{list-style:none; margin-top:2px;}
   .cert-list li{
     font-size:8.5pt; color:var(--ink-soft); padding-left:12px; position:relative; margin-bottom:2px;
+    display:flex; justify-content:space-between; align-items:baseline; gap:12px;
   }
+  .cert-list .cert-date{color:var(--ink-faint); font-size:8.3pt; white-space:nowrap; flex-shrink:0;}
   .cert-list li::before{content:"-"; position:absolute; left:0; color:var(--accent); font-weight:700; font-size:8.4pt;}
   .cert-list b{color:var(--ink); font-weight:600;}
 
@@ -156,9 +152,6 @@
     body{padding:0; font-size:11px;}
     .page{padding:22px 18px; border:none; box-shadow:none;}
     .proj-head{flex-direction:column; gap:1px;}
-    .head{flex-direction:column; align-items:flex-start; gap:12px;}
-    .head-text{width:100%;}
-    .head-photo{width:104px; height:104px;}
     .contact-line{justify-content:flex-start;}
     .contact-line span.sep{margin:0 10px;}
   }
@@ -173,7 +166,6 @@
 <main class="page">
 
   <div class="head">
-    <img class="head-photo" src="assets/resume-photo.jpg" alt="Zain Wahbi">
     <div class="head-text">
       <h1>Zain Wahbi</h1>
       <div class="head-role">Backend &amp; ML Engineer</div>
@@ -290,6 +282,8 @@
       <p class="edu-line"><strong>Al-Wataniya Private University</strong> — B.Eng, Computer Engineering</p>
       <p class="edu-meta">Sep 2021 – Jul 2026</p>
       <p class="edu-meta">Relevant Coursework: Web Application Development (PHP), Object-Oriented Programming (Java), Database Management Systems, Artificial Intelligence, Data Analysis, Computer Networks, Computer Hardware &amp; Architecture.</p>
+      <p class="edu-line" style="margin-top:7px;"><strong>Ajyal Private School</strong> — Baccalaureate</p>
+      <p class="edu-meta">Sep 2020 – Jul 2021</p>
     </div>
     <div class="section">
       <div class="section-title">Languages</div>
@@ -304,12 +298,14 @@
   <div class="section">
     <div class="section-title">Certifications</div>
     <ul class="cert-list">
-      <li><b>Mastering Laravel Framework and PHP</b> — Coursera</li>
-      <li><b>Building Web Applications in PHP</b> — Coursera, University of Michigan</li>
-      <li><b>JavaScript, jQuery, and JSON</b> — Coursera, University of Michigan</li>
-      <li><b>Data Analysis with Python</b> — Coursera, IBM</li>
-      <li><b>Introduction to Data Analytics</b> — Coursera, IBM</li>
-      <li><b>People &amp; Soft Skills: Essential for Professional Success</b> (Specialization) — Coursera, IBM</li>
+      <li><span><b>People &amp; Soft Skills: Essential for Professional Success</b> (Specialization) — Coursera, IBM</span><span class="cert-date">Oct 16, 2026</span></li>
+      <li><span><b>Data Analysis and Visualization with Power BI</b> — Coursera, Microsoft</span><span class="cert-date">Sep 28, 2026</span></li>
+      <li><span><b>Data Analysis with Python</b> — Coursera, IBM</span><span class="cert-date">Mar 26, 2026</span></li>
+      <li><span><b>Introduction to Data Analytics</b> — Coursera, IBM</span><span class="cert-date">Nov 28, 2025</span></li>
+      <li><span><b>Mastering Laravel Framework and PHP</b> — Coursera, Board Infinity</span><span class="cert-date">Aug 28, 2025</span></li>
+      <li><span><b>Web Applications for Everybody</b> (Specialization) — Coursera, University of Michigan</span><span class="cert-date">Aug 8, 2025</span></li>
+      <li><span><b>JavaScript, jQuery, and JSON</b> — Coursera, University of Michigan</span><span class="cert-date">Aug 8, 2025</span></li>
+      <li><span><b>Building Web Applications in PHP</b> — Coursera, University of Michigan</span><span class="cert-date">Jun 13, 2025</span></li>
     </ul>
   </div>
 
